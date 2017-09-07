@@ -55,7 +55,7 @@ func thread(ctx context.Context, name string, wg *sync.WaitGroup) {
 		default:
 			log.Printf("Thread %s: %d", name, x)
 			x++
-			time.Sleep(time.Second * time.Duration(rand.Intn(5))) // sleep for a random amount between 1-10 seconds
+			time.Sleep(time.Second * time.Duration(rand.Intn(5))) // sleep for a random amount between 1-5 seconds
 		}
 	}
 }
